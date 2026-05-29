@@ -9,9 +9,13 @@ export type TodoFormProps = {
   inputRef: React.RefObject<HTMLInputElement | null >;
 }
 
-export type TodoListProps = TodoFormProps & {
+export type TodoListProps =  {
   todos: Todo[];
   onToggle: (id: number) => void;
   onEdit: (id: number, newText: string) => void;
   onDelete: (id: number) => void;
+}
+
+export type TodoStatsProps =  {
+  todos: Todo[];
 }
