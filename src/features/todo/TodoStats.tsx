@@ -8,7 +8,7 @@ const TodoStats = ({todos}: TodoStatsProps) => {
 
   return(
   <>
-    {total && (
+    {total > 0 && (
       <div className="flex justify-between border-t pt-2 mt-2 text-cf-gray">
         <span>Total: {total}</span>
         <span>Active: {active}</span>
